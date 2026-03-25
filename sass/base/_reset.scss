@@ -1,0 +1,14 @@
+//variables
+@use "../utilities/variables" as *;
+//mixin
+@use "../utilities/mixin" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  background-color:rgb(177, 207, 148);
+  min-height: 68vh;
+}

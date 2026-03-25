@@ -1,0 +1,73 @@
+//variables
+@use "../utilities/variables" as *;
+//mixin
+@use "../utilities/mixin" as *;
+
+//header
+header{
+  nav{
+      background-color: $color-bordes;
+    div{
+      .navbarTitle{
+            color: $color-tipografia;
+            text-decoration: none; 
+
+            font-family: $font-imprenta;
+            font-size: 2rem;
+        }
+      div{
+        justify-content: end;
+        ul{
+          gap: 1rem;
+          align-items: center;
+          li{
+            a{
+              color: $color-tipografia;
+              text-decoration: none;
+              font-family: $font-imprenta;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+//footer
+footer{
+  @include flex; 
+  flex-direction: row;
+  padding: 2rem 4rem; 
+  
+  background-color: $color-bordes;
+  font-family: $font-imprenta;
+  color: $color-tipografia;
+  font-style: normal;
+
+  .footerContent{
+    @include flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+  
+  div{
+    ul{
+      list-style: none; 
+      color: $color-tipoFooter;
+    }
+    a{
+      text-decoration: none;
+      color: $color-tipografia;
+    }
+    iframe{
+      width: 100%;
+      height: 20vh;
+      border:0;
+      border: 1vh;
+    }
+  }
+ 
+}

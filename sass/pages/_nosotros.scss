@@ -1,0 +1,30 @@
+//variables
+@use "../utilities/variables" as *;
+//mixin
+@use "../utilities/mixin" as *;
+
+body{
+  main{
+    .nuestraHistoria{
+      text-align: center;
+      padding-top: 2rem;
+      background-color: $color-transNegro;
+      color: $color-tipografia;
+      font-size: 2rem;
+      min-height: 68vh;
+    }
+    div {
+      .title{
+        font-family: $font-cursiva;
+        font-size: 4rem;
+        font-style: normal;
+      }
+      .parrafo{
+        font-family: $font-imprenta;
+        font-size: 1.5rem;
+        font-style: normal;
+        padding: 3rem;
+      }
+    }
+  }
+}

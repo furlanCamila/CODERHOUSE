@@ -1,0 +1,38 @@
+//variables
+@use "../utilities/variables" as *;
+//mixin
+@use "../utilities/mixin" as *;
+
+body{
+  main{
+    .gridProductos{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap:1rem;
+      padding:1rem;
+    }
+    div{
+      .containerProductos{
+        @include flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem; 
+        p{
+        color: $color-tipografia;
+        font-family: $font-cursiva;
+        font-style: normal;
+        font-size: 3rem;
+        background-color: $color-transVerde;
+        padding: 0.1rem 1rem;
+        border-radius: 1vh;
+      }
+      img{
+        @include imagen (100%, 550px);
+        padding: 1rem;
+        border-radius:30px;
+      }
+    }
+      
+    }
+  }
+}

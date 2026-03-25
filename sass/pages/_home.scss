@@ -1,0 +1,28 @@
+//variables
+@use "../utilities/variables" as *;
+//mixin
+@use "../utilities/mixin" as *;
+
+body{
+  .jardinHome{
+    background-image: url("../imagenes/jardinPrincipal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .tituloJardinHome{
+    background-color: rgba(0, 34, 0, 0.5);
+    border-radius: 1.5vw;
+    margin-top: 4rem;
+    padding: 0.6rem 2rem  ; 
+    color: $color-tipografia;
+    font-family: $font-cursiva;
+    font-size: 4rem;
+    font-style: normal;
+    text-align: center;
+  }
+}

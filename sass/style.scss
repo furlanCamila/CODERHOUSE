@@ -1,0 +1,21 @@
+//reset
+@use "base/reset";
+
+//header y footer
+@use "layout/headerFooter";
+
+//home
+@use "pages/home"; 
+
+//productos y servicios
+@use "pages/products";
+
+//nosotros
+@use "pages/nosotros";
+
+//contacto
+@use "pages/contacto";
+
+//mobile y tablet (aplican las mismas reglas para ambos)
+@use "layout/mq-mobile";
+

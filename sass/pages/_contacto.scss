@@ -1,0 +1,52 @@
+//variables
+@use "../utilities/variables" as *;
+//mixin
+@use "../utilities/mixin" as *;
+
+body{
+  main{
+    .containerContacto{
+      display: flex; 
+      flex-direction: column;
+      justify-content: start;
+      gap: 1.5rem; 
+      padding: 2rem; 
+
+      color: $color-tipografia;
+      font-family: $font-imprenta;
+      font-size: 1.2rem;
+    }
+    .containerForm{
+      max-width: 50%;
+    }
+    div{
+      .form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem; 
+        margin-bottom: 1rem;
+
+        input{
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        }
+
+        textarea{
+          border-radius: 10px;
+          border: 1px solid #ccc;
+        }
+
+        button{
+          background-color: $color-bordes;
+          color: $color-tipografia; 
+          border: none; 
+          padding: 0.8rem 1.5rem; 
+          border-radius:  5px;
+          width: 20%;
+          cursor: pointer; 
+        }
+      }
+    }
+  }
+  
+}

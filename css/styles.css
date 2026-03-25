@@ -1,114 +1,108 @@
-:root{
-  --verdeOscuro: #2f5213;
-  --verdeMedio: #6da044; 
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
-/*links del nav*/
-/*.nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-
-  background-color: var(--verdeMedio);
-  font-family: "Playfair", serif;
-  font-style: normal;
-} 
-
-.navbar{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  list-style: none;
-} 
-
-.nav h1{
-  font-size: 2rem;
+main {
+  background-color: rgb(177, 207, 148);
+  min-height: 68vh;
 }
-.nav a{
+
+header nav {
+  background-color: #6da044;
+}
+header nav div .navbarTitle {
+  color: beige;
   text-decoration: none;
-  color: beige;
-  font-size: 1.5rem;
-}*/
-.bg{
-  background-color: var(--verdeMedio);
-}
-
-.navbarTitle{
-  color: beige;
-  text-decoration: none; 
-
   font-family: "Playfair", serif;
   font-size: 2rem;
 }
-
-.navContainer{
+header nav div div {
   justify-content: end;
 }
-
-.navItems{
+header nav div div ul {
+  gap: 1rem;
+  align-items: center;
+}
+header nav div div ul li a {
   color: beige;
   text-decoration: none;
   font-family: "Playfair", serif;
   font-size: 1.5rem;
 }
 
-.navbar-nav{
-  gap: 1rem;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem 4rem;
+  background-color: #6da044;
+  font-family: "Playfair", serif;
+  color: beige;
+  font-style: normal;
+}
+footer .footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+footer div ul {
+  list-style: none;
+  color: #2f5213;
+}
+footer div a {
+  text-decoration: none;
+  color: beige;
+}
+footer div iframe {
+  width: 100%;
+  height: 20vh;
+  border: 0;
+  border: 1vh;
 }
 
-
-/*main del Home*/
-.jardinHome{
-  min-height: 100vh;
+body .jardinHome {
   background-image: url("../imagenes/jardinPrincipal.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   align-items: start;
+  justify-content: center;
 }
-
-.tituloJardinHome{
+body .tituloJardinHome {
   background-color: rgba(0, 34, 0, 0.5);
   border-radius: 1.5vw;
   margin-top: 4rem;
-  padding: 0.6rem 2rem  ; 
-  color: white;
+  padding: 0.6rem 2rem;
+  color: beige;
   font-family: "italianno", cursive;
   font-size: 4rem;
   font-style: normal;
-}
-/*main generico de las otras paginas*/
-
-.main{
-  background-color:rgb(177, 207, 148)
+  text-align: center;
 }
 
-.gridProductos{
+body main .gridProductos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap:1rem;
-  padding:1rem;
+  gap: 1rem;
+  padding: 1rem;
 }
-
-.containerProductos{
+body main div .containerProductos {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  gap: 1rem; 
+  gap: 1rem;
 }
-
-.containerProductos p{
+body main div .containerProductos p {
   color: beige;
   font-family: "italianno", cursive;
   font-style: normal;
@@ -117,144 +111,90 @@
   padding: 0.1rem 1rem;
   border-radius: 1vh;
 }
-.containerProductos img{
-  width:100%;
-  height:350px;
-  object-fit:cover;
-  border-radius:30px;
+body main div .containerProductos img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 30px;
 }
 
-/*Centrado del texto/parrafo de Nosotros*/
-.nuestraHistoria{
+body main .nuestraHistoria {
   text-align: center;
-  padding: 2rem 5rem;
-
+  padding-top: 2rem;
   background-color: rgba(0, 0, 0, 0.5);
   color: beige;
   font-size: 2rem;
+  min-height: 68vh;
 }
-.nuestraHistoria h2{
+body main div .title {
   font-family: "italianno", cursive;
   font-size: 4rem;
   font-style: normal;
 }
-
-.nuestraHistoria p{
+body main div .parrafo {
   font-family: "Playfair", serif;
   font-size: 1.5rem;
   font-style: normal;
+  padding: 3rem;
 }
 
-/* Contacto*/
-
-.containerContacto{
-  display: flex; 
+body main .containerContacto {
+  display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 1.5rem; 
-  padding: 2rem; 
-
-  color: white;
+  gap: 1.5rem;
+  padding: 2rem;
+  color: beige;
   font-family: "Playfair", serif;
   font-size: 1.2rem;
 }
-
-.containerForm{
+body main .containerForm {
   max-width: 50%;
 }
-.form{
+body main div .form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; 
+  gap: 1.5rem;
   margin-bottom: 1rem;
 }
-
-.form input{
+body main div .form input {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-.form textarea{
+body main div .form textarea {
   border-radius: 10px;
   border: 1px solid #ccc;
 }
-
-.form button{
-  background-color: var(--verdeMedio);
-  color: beige; 
-  border: none; 
-  padding: 0.8rem 1.5rem; 
-  border-radius:  5px;
+body main div .form button {
+  background-color: #6da044;
+  color: beige;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
   width: 20%;
-  cursor: pointer; 
-
+  cursor: pointer;
 }
 
-
-/*Color fondo y de texto*/
-.footer{
-  display: flex;
-  flex-direction: row;
-  padding: 2rem 4rem; 
-  justify-content: space-between;
-  align-items: center;
-  
-  background-color: var(--verdeMedio);
-  font-family: "Playfair", serif;
-  color: beige;
-  font-style: normal;
-}
-
-.footerContent{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 1.2rem;
-}
-
-.footer ul{
-  list-style: none; 
-  color: var(--verdeOscuro);
-}
-
-/*link de instragram*/
-.footer a{
-  text-decoration: none;
-  color: beige;
-}
-
-.mapa iframe{
-  width: 100%;
-  height: 20vh;
-  border:0;
-  border: 1vh;
-}
-
-@media (max-width: 650px){
-  .nav{
+@media (max-width: 850px) {
+  .containerProductos img {
+    height: 300px;
+  }
+  .nuestraHistoria {
+    padding: 20px 30px;
+  }
+  body main .containerForm {
+    max-width: 100%;
+  }
+  body main div .form button {
+    width: 100%;
+  }
+  footer {
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 20px;
   }
-  .navbar{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .tituloJardinHome{
-    text-align: center;
-  }
-
-  .nuestraHistoria{
-    padding: 20px 30px;
-  }
-  
-  .containerContacto button{
-    width: 100px; 
-  }
-  .footer{
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
-    padding: 20px; 
-  }
 }
+
+/*# sourceMappingURL=styles.css.map */

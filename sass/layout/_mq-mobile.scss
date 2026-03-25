@@ -1,0 +1,38 @@
+//variables
+@use "../utilities/variables" as *;
+//mixin
+@use "../utilities/mixin" as *;
+
+
+@media (max-width: 850px){
+  .containerProductos{
+    img{
+      height: 300px;
+    }
+  }
+  
+  .nuestraHistoria{
+    padding: 20px 30px;
+  }
+body{
+  main{
+    .containerForm{
+      max-width: 100%;
+    }
+    div{
+      .form{
+        button{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+  footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px; 
+  }
+}
