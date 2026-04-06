@@ -14,12 +14,14 @@ header{
 
             font-family: $font-imprenta;
             font-size: 2rem;
+            margin-left: 20px;
         }
       div{
         justify-content: end;
         ul{
-          gap: 1rem;
+          gap: 30px;
           align-items: center;
+          margin-right: 20px;
           li{
             a{
               color: $color-tipografia;
@@ -41,7 +43,7 @@ footer{
   flex-direction: row;
   padding: 2rem 4rem; 
   
-  background-color: $color-bordes;
+  background-color: #5b9197;
   font-family: $font-imprenta;
   color: $color-tipografia;
   font-style: normal;

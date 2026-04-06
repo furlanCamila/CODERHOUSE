@@ -5,6 +5,19 @@
 
 
 @media (max-width: 850px){
+
+  header{
+    nav{
+        div{
+          div{
+            ul{
+            gap: 10px;
+            }
+          };
+        }
+      }
+  }
+  
   .containerProductos{
     img{
       height: 300px;
