@@ -209,6 +209,9 @@ body main div .form button {
   body main div .form button {
     width: 100%;
   }
+  body .mainNosotros {
+    height: 100%;
+  }
   footer {
     flex-direction: column;
     align-items: center;
