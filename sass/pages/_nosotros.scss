@@ -5,23 +5,24 @@
 
 body{
   .mainNosotros{
+    background-color: $color-bgNosotros;
     display: flex;
     flex-direction: column;
     align-items: space-around;
     height: 68vh;
     gap: 20px;
+    padding-bottom: 20px;
 
     .nuestraHistoria{
       text-align: center;
       padding-top: 2rem;
-      background-color: $color-transNegro;
       color: $color-tipografia;
       font-size: 2rem;
-      padding-top: 60px;
     }
     div {
       height: 100%;
       padding: 40px;
+      
       .title{
         font-family: $font-cursiva;
         font-size: 4rem;
@@ -31,7 +32,6 @@ body{
         font-family: $font-imprenta;
         font-size: 1.5rem;
         font-style: normal;
-        padding: 20px;
       }
       .parrafoFinal{
         margin-top: 2rem;

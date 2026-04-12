@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/styles.css">
-  <title>La Pomme d'Eve</title>
+  <title>Musica en vivo</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,26 +52,67 @@
   </header>
 
 <main>
-  <!-- CAFETERIA -->
-  <div class="gridProductos">
-    <div class="containerProductos"> 
-      <img src="../imagenes/patisserie.jpg" alt="Patisserie artesanal">
-      <a class="linkProduc" href="../recursos/menu_la_pomme_deve.pdf" target="_blank" >Menú</a>
-    </div>
 
-    <!-- RESERVACIONES -->
-    <div class="containerProductos">
-      <img src="../imagenes/teaParty.jpg" alt="Servicio de Tea Party">
-      <a class="linkProduc" href="./contacto.html">Reservaciones</a>
-    </div>
+    <section class="musicaSection">
 
-    <!-- MUSICA EN VIVO -->
-    <div class="containerProductos">
-      <img src="../imagenes/piano.jpg" alt="Piano en vivo en el jardin interno">
-      <a class="linkProduc" href="../pages/musica-en-vivo.html">Musica en vivo</a>
-    </div>
+        <div class="musicaInfo">
 
-  </div>
+            <h2>Música en Vivo</h2>
+
+            <p>
+            Disfrutá de tardes únicas donde la música en vivo acompaña la experiencia de té.
+            Piano, jazz suave y acústicos en un entorno natural que invita a relajarse.
+            </p>
+
+            <div>
+
+            <div>
+                <h3>Días</h3>
+                <p>Viernes y Sábados</p>
+            </div>
+
+            <div>
+                <h3>Horario</h3>
+                <p>17:00 a 20:00 hs</p>
+            </div>
+
+            <div>
+                <h3>Estilo</h3>
+                <p>Jazz · Piano · Acústico</p>
+            </div>
+
+            </div>
+
+        </div>
+        <div class="carousel">
+
+            <!-- Radios -->
+            <input type="radio" name="slider" id="s1" checked>
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+
+            <!-- Slides -->
+            <div class="slides">
+                <div class="slide">
+                <img src="../imagenes/musica-en-vivo-banda.jpg">
+                </div>
+                <div class="slide">
+                <img src="../imagenes/musica-en-vivo-acoustic.jpg">
+                </div>
+                <div class="slide">
+                <img src="../imagenes/musica-en-vivo-jazz.jpg">
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <div class="navigation">
+                <label for="s1"></label>
+                <label for="s2"></label>
+                <label for="s3"></label>
+            </div>
+
+        </div>
+    </section>
   
   </main>
 
@@ -108,5 +149,5 @@
   </footer>
   
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </html>
